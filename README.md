@@ -1,4 +1,4 @@
-# DiLoFestival-PHP-SDK
+# tmoney-dilofestival-PHP-SDK
 It's the PHP-CodeIgniter simple code to communicate with T-MONEY API
 
 There are 3 example code in this SDK :
