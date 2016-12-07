@@ -115,5 +115,5 @@ defined('FUSION_PLATFORM_NAME')			OR define('FUSION_PLATFORM_NAME', 'T-MONEY');
 
 defined('FUSION_BASE_API')       		OR define('FUSION_BASE_API', 'https://api.mainapi.net/tmoney/1.0.0/');
 
-defined('FUSION_API_KEY')       		OR define('FUSION_API_KEY', '3e60e5d18c9a83b4c4d89961aaf8f25c');
-defined('FUSION_TERMINAL')       		OR define('FUSION_TERMINAL', 'WEB-TMONEY');
+defined('FUSION_API_KEY')       		OR define('FUSION_API_KEY', '_SET_IT_WITH_YOUR_OWN_KEY_');
+defined('FUSION_TERMINAL')       		OR define('FUSION_TERMINAL', '_ASKED_TO_INSTRUCTOR_');
