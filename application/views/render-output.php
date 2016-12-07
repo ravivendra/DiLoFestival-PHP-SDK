@@ -89,14 +89,14 @@
                             <li><a href="<?php echo base_url(); ?>" class="waves-effect active"><i class="ion-home"></i><span>Dashboard </span></a>
                             <!-- <li><a href="<?php echo base_url(); ?>" class="waves-effect"><i class="ion-code-working"></i><span>Base API Environment </span></a></li> -->
                             <li class="has_sub">
-                                <a href="#" class="waves-effect"><i class="ion-home"></i><span>Authentication </span><span class="pull-right"><i class="md md-add"></i></span></a>
+                                <a href="#" class="waves-effect"><i class="ion-locked"></i><span>Authentication </span><span class="pull-right"><i class="md md-add"></i></span></a>
                                 <ul class="list-unstyled">
                             		<a href="<?php echo site_url('api/sign-up'); ?>" class="waves-effect"><span>Registration</span></a>
                             		<a href="<?php echo site_url('api/sign-in'); ?>" class="waves-effect"><span>Sign In</span></a>
                             	</ul>
                             </li>
                             <li class="has_sub">
-                                <a href="#" class="waves-effect"><i class="ion-home"></i><span>Transaction </span><span class="pull-right"><i class="md md-add"></i></span></a>
+                                <a href="#" class="waves-effect"><i class="md md-payment"></i><span>Transaction </span><span class="pull-right"><i class="md md-add"></i></span></a>
                                 <ul class="list-unstyled">
                             		<!-- <a href="<?php echo site_url('api/topup-finpay-0211'); ?>" class="waves-effect"><span>FinPay 0211 </span></a>
                             		<a href="<?php echo site_url('api/game-and-voucher'); ?>" class="waves-effect"><span>Game & Voucher </span></a>
