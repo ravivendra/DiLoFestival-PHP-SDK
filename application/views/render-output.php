@@ -119,7 +119,38 @@
                 <!-- Start content -->
                 <div class="content">
                     <div class="container">
-                        <?php $this->load->view($content); ?>
+                        <?php
+                        	if($this->uri->segment(1) == 'api' && $this->uri->segment(2) == 't-money')
+                        		$this->load->view($content);
+                        	else
+                        	{
+                        		if(FUSION_API_KEY == '' OR FUSION_API_KEY == '_SET_IT_WITH_YOUR_OWN_KEY_')
+                        		{
+                        ?>
+                        	<!-- Page-Title -->
+	                        <div class="row">
+	                            <div class="col-sm-12">
+	                                <h4 class="pull-left page-title">Set your own key from our system (www.mainapi.net)</h4>
+	                            </div>
+	                        </div>
+                        <?php
+                        		}
+                        		else
+                        		if(FUSION_TERMINAL == '' OR FUSION_TERMINAL == '_ASKED_TO_INSTRUCTOR_')
+                        		{
+                        ?>
+                        	<!-- Page-Title -->
+	                        <div class="row">
+	                            <div class="col-sm-12">
+	                                <h4 class="pull-left page-title">Set your terminal by asking to the instructor</h4>
+	                            </div>
+	                        </div>
+                        <?php
+                        		}
+                        		else
+                        			$this->load->view($content);
+                        	}
+                        ?>
                     </div> <!-- container -->
 
                 </div> <!-- content -->
