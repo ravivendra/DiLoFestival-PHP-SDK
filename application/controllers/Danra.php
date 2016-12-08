@@ -21,7 +21,7 @@
 		}
 
 
-		protected function _call_url($api = '', $body = '')
+		protected function _call_url($api = '', $body = '', $post = TRUE)
 		{
 			$header 					= array();
 
@@ -29,9 +29,60 @@
 			$header[]					= 'Authorization: Bearer ' . FUSION_API_KEY;
 			$header[]					= 'Content-Type: application/x-www-form-urlencoded';
 
-			$exec 						= @ call_url(FUSION_BASE_API . $api, $header, $body, TRUE);
+			$exec 						= @ call_url($api, $header, $body, $post);
 
 			return ($exec);
+		}
+
+
+		public function api_ipg_get_ticket()
+		{
+			$body 						= array();
+
+			$data['params']				= @ base_barrel();
+			$data['content']			= self::CONTENT_DIR . '/v-ipg-get-ticket';
+
+			if($this->input->post('send') == 'Send')
+			{
+				$body['merchant_id']		= @ sanitizer_vars($this->input->post('merchant_id'));
+				$body['invoice']			= @ sanitizer_vars($this->input->post('invoice'));
+				$body['amount']				= @ sanitizer_vars($this->input->post('amount'));
+				$body['redirect_url']		= @ sanitizer_vars($this->input->post('redirect_url'));
+				$body['payment_notif_url']	= @ sanitizer_vars($this->input->post('payment_notif_url'));
+
+				$ipg_url 				= 'https://devapi-app.tmoney.co.id/api/ipg/v1/ipg-get-ticket?'
+									. 'merchant_id=' . $body['merchant_id']
+									. '&invoice=' . $body['invoice']
+									. '&amount=' . $body['amount']
+									. '&redirect_url=' . $body['redirect_url']
+									. '&payment_notif_url=' . $body['payment_notif_url'];
+
+				$data['response']		= $this->_call_url($ipg_url, $body, FALSE);
+			}
+
+			$this->load->view('render-output', $data);
+		}
+
+
+		public function api_ipg_payment()
+		{
+			$body 						= array();
+
+			$data['params']				= @ base_barrel();
+			$data['content']			= self::CONTENT_DIR . '/v-ipg-payment';
+
+			if($this->input->post('send') == 'Send')
+			{
+				$body['ticketID']		= @ sanitizer_vars($this->input->post('ticketID'));
+
+				$ipg_url 				= 'https://devapi-app.tmoney.co.id/api/ipg/v1/ipg-payment?'
+									. 'ticketID=' . $body['ticketID'];
+
+				# $data['response']		= $this->_call_url($ipg_url, $body, FALSE);
+				redirect($ipg_url);
+			}
+
+			$this->load->view('render-output', $data);
 		}
 
 
@@ -50,7 +101,7 @@
 				$body['password']		= @ sanitizer_vars($this->input->post('password'));
 				$body['terminal']		= @ sanitizer_vars($this->input->post('terminal'));
 
-				$data['response']		= $this->_call_url($api, $body);
+				$data['response']		= $this->_call_url(FUSION_BASE_API . $api, $body);
 			}
 
 			$this->load->view('render-output', $data);
@@ -75,7 +126,7 @@
 				$body['phoneNo']		= @ sanitizer_vars($this->input->post('phoneNo'));
 				$body['terminal']		= @ sanitizer_vars($this->input->post('terminal'));
 
-				$data['response']		= $this->_call_url($api, $body);
+				$data['response']		= $this->_call_url(FUSION_BASE_API . $api, $body);
 			}
 
 			$this->load->view('render-output', $data);
@@ -126,7 +177,7 @@
 					$body['pin']				= @ sanitizer_vars($this->input->post('pin'));
 				}
 
-				$data['response']		= $this->_call_url($api, $body);
+				$data['response']		= $this->_call_url(FUSION_BASE_API . $api, $body);
 			}
 
 			$this->load->view('render-output', $data);

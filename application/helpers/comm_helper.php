@@ -22,8 +22,13 @@
 		    curl_setopt($handler, CURLOPT_URL, $url);
 
 	    	curl_setopt($handler, CURLOPT_HTTPHEADER, $header);
-		    curl_setopt($handler, CURLOPT_POST, $post);
-		    curl_setopt($handler, CURLOPT_POSTFIELDS, http_build_query($body));
+
+	    	if($post == TRUE)
+	    	{
+			    curl_setopt($handler, CURLOPT_POST, $post);
+			    curl_setopt($handler, CURLOPT_POSTFIELDS, http_build_query($body));
+	    	}
+
 		    curl_setopt($handler, CURLOPT_RETURNTRANSFER, 1);
 
 		    curl_setopt($handler, CURLOPT_SSL_VERIFYPEER, FALSE);

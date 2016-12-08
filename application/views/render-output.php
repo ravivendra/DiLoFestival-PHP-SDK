@@ -104,6 +104,13 @@
                             		<a href="<?php echo site_url('api/transfer-p2p'); ?>" class="waves-effect"><span>Transfer P2P </span></a>
                             	</ul>
                             </li>
+                            <li class="has_sub">
+                                <a href="#" class="waves-effect"><i class="fa fa-money"></i><span>IPG </span><span class="pull-right"><i class="md md-add"></i></span></a>
+                                <ul class="list-unstyled">
+                            		<a href="<?php echo site_url('api/ipg-get-ticket'); ?>" class="waves-effect"><span>Get Ticket</span></a>
+                            		<a href="<?php echo site_url('api/ipg-payment'); ?>" class="waves-effect"><span>Payment</span></a>
+                            	</ul>
+                            </li>
                         </ul>
                         <div class="clearfix"></div>
                     </div>
