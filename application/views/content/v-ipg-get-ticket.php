@@ -8,31 +8,31 @@
                                                 <div class="form-group">
                                                     <label for="merchant_id" class="control-label col-lg-2">Merchant ID *</label>
                                                     <div class="col-lg-10">
-                                                        <input class="form-control" id="merchant_id" name="merchant_id" type="text" required="required" value="195100001410" aria-required="true" />
+                                                        <input placeholder="Enter your own Merchant ID (Example : 195112345678)" class="form-control" id="merchant_id" name="merchant_id" type="text" required="required" value="195100001410" aria-required="true" />
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="invoice" class="control-label col-lg-2">Invoice ID *</label>
                                                     <div class="col-lg-10">
-                                                        <input class="form-control" id="invoice" name="invoice" type="text" required="required" value="" aria-required="true" />
+                                                        <input placeholder="Enter your unique Invoice ID (Example : 12345)" class="form-control" id="invoice" name="invoice" type="text" required="required" value="" aria-required="true" />
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="amount" class="control-label col-lg-2">Amount *</label>
                                                     <div class="col-lg-10">
-                                                        <input class="form-control" id="amount" name="amount" type="text" required="required" aria-required="true" value="100" />
+                                                        <input placeholder="Enter transaction amount (Example : 10000)" class="form-control" id="amount" name="amount" type="text" required="required" aria-required="true" value="100" />
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="redirect_url" class="control-label col-lg-2">Redirect URL *</label>
                                                     <div class="col-lg-10">
-                                                        <input class="form-control" id="redirect_url" name="redirect_url" type="text" required="required" aria-required="true" value="http://www.indihome.co.id/" />
+                                                        <input placeholder="Example : https://api.tmoney.co.id/" class="form-control" id="redirect_url" name="redirect_url" type="text" required="required" aria-required="true" value="http://www.indihome.co.id/" />
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="payment_notif_url" class="control-label col-lg-2">Notification URL *</label>
                                                     <div class="col-lg-10">
-                                                        <input class="form-control" id="payment_notif_url" name="payment_notif_url" type="text" required="required" aria-required="true" value="http://www.indihome.co.id/" />
+                                                        <input placeholder="Example : https://api.tmoney.co.id/" class="form-control" id="payment_notif_url" name="payment_notif_url" type="text" required="required" aria-required="true" value="http://www.indihome.co.id/" />
                                                     </div>
                                                 </div>
                                                 <div class="form-group">

@@ -8,19 +8,19 @@
                                                 <div class="form-group">
                                                     <label for="userName" class="control-label col-lg-2">Email *</label>
                                                     <div class="col-lg-10">
-                                                        <input class="form-control" id="userName" name="userName" type="text" required="required" value="<?php echo ($this->input->post('userName')) ? ($this->input->post('userName')) : ''; ?>" aria-required="true" />
+                                                        <input placeholder="Enter your email address" class="form-control" id="userName" name="userName" type="text" required="required" value="<?php echo ($this->input->post('userName')) ? ($this->input->post('userName')) : ''; ?>" aria-required="true" />
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="password" class="control-label col-lg-2">Password *</label>
                                                     <div class="col-lg-10">
-                                                        <input class="form-control" id="password" name="password" type="password" required="required" value="<?php echo ($this->input->post('password')) ? ($this->input->post('password')) : ''; ?>" aria-required="true" />
+                                                        <input placeholder="Enter your password" class="form-control" id="password" name="password" type="password" required="required" value="<?php echo ($this->input->post('password')) ? ($this->input->post('password')) : ''; ?>" aria-required="true" />
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="terminal" class="control-label col-lg-2">Terminal *</label>
                                                     <div class="col-lg-10">
-                                                        <input class="form-control" id="terminal" name="terminal" type="text" required="required" aria-required="true" value="<?php echo ($this->input->post('terminal')) ? ($this->input->post('terminal')) : FUSION_TERMINAL; ?>" readonly="readonly" />
+                                                        <input placeholder="Unique Terminal ID from T-MONEY system" class="form-control" id="terminal" name="terminal" type="text" required="required" aria-required="true" value="<?php echo ($this->input->post('terminal')) ? ($this->input->post('terminal')) : FUSION_TERMINAL; ?>" readonly="readonly" />
                                                     </div>
                                                 </div>
                                                 <div class="form-group">

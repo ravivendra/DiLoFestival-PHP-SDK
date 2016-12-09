@@ -8,7 +8,7 @@
                                                 <div class="form-group">
                                                     <label for="ticketID" class="control-label col-lg-2">Ticket ID *</label>
                                                     <div class="col-lg-10">
-                                                        <input class="form-control" id="ticketID" name="ticketID" type="text" required="required" value="" aria-required="true" />
+                                                        <input placeholder="Enter generated Ticket ID from Get Ticket API" class="form-control" id="ticketID" name="ticketID" type="text" required="required" value="" aria-required="true" />
                                                     </div>
                                                 </div>
                                                 <div class="form-group">

@@ -21,13 +21,16 @@
 
 		    curl_setopt($handler, CURLOPT_URL, $url);
 
-	    	curl_setopt($handler, CURLOPT_HTTPHEADER, $header);
+		    if($header != NULL && $header != '')
+		    	curl_setopt($handler, CURLOPT_HTTPHEADER, $header);
 
 	    	if($post == TRUE)
 	    	{
 			    curl_setopt($handler, CURLOPT_POST, $post);
 			    curl_setopt($handler, CURLOPT_POSTFIELDS, http_build_query($body));
 	    	}
+	    	else
+	    		curl_setopt($handler, CURLOPT_HTTPGET, TRUE);
 
 		    curl_setopt($handler, CURLOPT_RETURNTRANSFER, 1);
 

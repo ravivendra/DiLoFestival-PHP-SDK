@@ -8,43 +8,43 @@
                                                 <div class="form-group">
                                                     <label for="idTmoney" class="control-label col-lg-2">ID T-Money *</label>
                                                     <div class="col-lg-10">
-                                                        <input class="form-control" id="idTmoney" name="idTmoney" type="text" required="required" value="<?php echo ($this->input->post('idTmoney')) ? ($this->input->post('idTmoney')) : ''; ?>" aria-required="true" />
+                                                        <input placeholder="Enter your T-MONEY account ID (Example : 195112345678)" class="form-control" id="idTmoney" name="idTmoney" type="text" required="required" value="<?php echo ($this->input->post('idTmoney')) ? ($this->input->post('idTmoney')) : ''; ?>" aria-required="true" />
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="idFusion" class="control-label col-lg-2">ID Wallet *</label>
                                                     <div class="col-lg-10">
-                                                        <input class="form-control" id="idFusion" name="idFusion" type="text" required="required" value="<?php echo ($this->input->post('idFusion')) ? ($this->input->post('idFusion')) : ''; ?>" aria-required="true" />
+                                                        <input placeholder="Enter your T-MONEY wallet ID (Example : +62195112345678)" class="form-control" id="idFusion" name="idFusion" type="text" required="required" value="<?php echo ($this->input->post('idFusion')) ? ($this->input->post('idFusion')) : ''; ?>" aria-required="true" />
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="token" class="control-label col-lg-2">Token *</label>
                                                     <div class="col-lg-10">
-                                                        <input class="form-control" id="token" name="token" type="text" required="required" value="<?php echo ($this->input->post('token')) ? ($this->input->post('token')) : ''; ?>" aria-required="true" />
+                                                        <input placeholder="Enter generated Token from Sign In API" class="form-control" id="token" name="token" type="text" required="required" value="<?php echo ($this->input->post('token')) ? ($this->input->post('token')) : ''; ?>" aria-required="true" />
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="terminal" class="control-label col-lg-2">Terminal *</label>
                                                     <div class="col-lg-10">
-                                                        <input class="form-control" id="terminal" name="terminal" type="text" required="required" aria-required="true" value="<?php echo ($this->input->post('terminal')) ? ($this->input->post('terminal')) : FUSION_TERMINAL; ?>" readonly="readonly" />
+                                                        <input placeholder="Unique Terminal ID from T-MONEY system" class="form-control" id="terminal" name="terminal" type="text" required="required" aria-required="true" value="<?php echo ($this->input->post('terminal')) ? ($this->input->post('terminal')) : FUSION_TERMINAL; ?>" readonly="readonly" />
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="destAccount" class="control-label col-lg-2">Destination Account *</label>
                                                     <div class="col-lg-10">
-                                                        <input class="form-control" id="destAccount" name="destAccount" type="text" required="required" value="<?php echo ($this->input->post('destAccount')) ? ($this->input->post('destAccount')) : ''; ?>" aria-required="true" />
+                                                        <input placeholder="Enter the destination account (can be filled by ID or Email Address)" class="form-control" id="destAccount" name="destAccount" type="text" required="required" value="<?php echo ($this->input->post('destAccount')) ? ($this->input->post('destAccount')) : ''; ?>" aria-required="true" />
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="amount" class="control-label col-lg-2">Amount *</label>
                                                     <div class="col-lg-10">
-                                                        <input class="form-control" id="amount" name="amount" type="text" required="required" value="<?php echo ($this->input->post('amount')) ? ($this->input->post('amount')) : ''; ?>" aria-required="true" />
+                                                        <input placeholder="Enter transaction amount (Example : 10000)" class="form-control" id="amount" name="amount" type="text" required="required" value="<?php echo ($this->input->post('amount')) ? ($this->input->post('amount')) : ''; ?>" aria-required="true" />
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="transactionType" class="control-label col-lg-2">Transaction Type *</label>
                                                     <div class="col-lg-10">
-                                                        <input class="form-control" id="transactionType" name="transactionType" type="text" required="required" aria-required="true" value="<?php echo ($this->input->post('send') == 'Send' && ($this->input->post('transactionType') == 1 OR $this->input->post('transactionType') == 2)) ? 2 : 1; ?>" readonly="readonly" />
+                                                        <input placeholder="Filled with 1 for Inquiry & 2 for Confirmation" class="form-control" id="transactionType" name="transactionType" type="text" required="required" aria-required="true" value="<?php echo ($this->input->post('send') == 'Send' && ($this->input->post('transactionType') == 1 OR $this->input->post('transactionType') == 2)) ? 2 : 1; ?>" readonly="readonly" />
                                                     </div>
                                                 </div>
                                                 <?php
@@ -53,19 +53,19 @@
                                                 <div class="form-group">
                                                     <label for="transactionID" class="control-label col-lg-2">Transaction ID *</label>
                                                     <div class="col-lg-10">
-                                                        <input class="form-control" id="transactionID" name="transactionID" type="text" required="required" aria-required="true" value="<?php echo ($this->input->post('transactionID')) ? ($this->input->post('transactionID')) : ''; ?>" />
+                                                        <input placeholder="Filled with transactionID from API's Inquiry step" class="form-control" id="transactionID" name="transactionID" type="text" required="required" aria-required="true" value="<?php echo ($this->input->post('transactionID')) ? ($this->input->post('transactionID')) : ''; ?>" />
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="refNo" class="control-label col-lg-2">Reference Code *</label>
                                                     <div class="col-lg-10">
-                                                        <input class="form-control" id="refNo" name="refNo" type="text" required="required" aria-required="true" value="<?php echo ($this->input->post('refNo')) ? ($this->input->post('refNo')) : ''; ?>" />
+                                                        <input placeholder="Filled with refNo from API's Inquiry step" class="form-control" id="refNo" name="refNo" type="text" required="required" aria-required="true" value="<?php echo ($this->input->post('refNo')) ? ($this->input->post('refNo')) : ''; ?>" />
                                                     </div>
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="pin" class="control-label col-lg-2">PIN *</label>
                                                     <div class="col-lg-10">
-                                                        <input class="form-control" id="pin" name="pin" type="password" required="required" maxlength="6" aria-required="true" value="" />
+                                                        <input placeholder="Enter your own 6 digit PIN" class="form-control" id="pin" name="pin" type="password" required="required" maxlength="6" aria-required="true" value="" />
                                                     </div>
                                                 </div>
                                                 <?php

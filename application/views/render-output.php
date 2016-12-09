@@ -23,13 +23,6 @@
         <link href="<?php echo $params['base_theme']; ?>css/menu.css" rel="stylesheet" type="text/css">
         <link href="<?php echo $params['base_theme']; ?>css/responsive.css" rel="stylesheet" type="text/css">
 
-		<!-- DataTables -->
-        <link href="<?php echo $params['base_theme']; ?>plugins/datatables/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
-        <link href="<?php echo $params['base_theme']; ?>plugins/datatables/buttons.bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <link href="<?php echo $params['base_theme']; ?>plugins/datatables/fixedHeader.bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <link href="<?php echo $params['base_theme']; ?>plugins/datatables/responsive.bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <link href="<?php echo $params['base_theme']; ?>plugins/datatables/scroller.bootstrap.min.css" rel="stylesheet" type="text/css" />
-
         <script src="<?php echo $params['base_theme']; ?>js/modernizr.min.js"></script>
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -75,9 +68,7 @@
             </div>
             <!-- Top Bar End -->
 
-
             <!-- ========== Left Sidebar Start ========== -->
-
             <div class="left side-menu">
                 <div class="sidebar-inner slimscrollleft">
                     <!-- <div class="user-details">
@@ -197,47 +188,11 @@
         <!-- jQuery  -->
         <script src="<?php echo $params['base_theme']; ?>plugins/sweetalert/dist/sweetalert.min.js"></script>
 
-        <!-- flot Chart -->
-        <script src="<?php echo $params['base_theme']; ?>plugins/flot-chart/jquery.flot.js"></script>
-        <script src="<?php echo $params['base_theme']; ?>plugins/flot-chart/jquery.flot.time.js"></script>
-        <script src="<?php echo $params['base_theme']; ?>plugins/flot-chart/jquery.flot.tooltip.min.js"></script>
-        <script src="<?php echo $params['base_theme']; ?>plugins/flot-chart/jquery.flot.resize.js"></script>
-        <script src="<?php echo $params['base_theme']; ?>plugins/flot-chart/jquery.flot.pie.js"></script>
-        <script src="<?php echo $params['base_theme']; ?>plugins/flot-chart/jquery.flot.selection.js"></script>
-        <script src="<?php echo $params['base_theme']; ?>plugins/flot-chart/jquery.flot.stack.js"></script>
-        <script src="<?php echo $params['base_theme']; ?>plugins/flot-chart/jquery.flot.crosshair.js"></script>
-
         <!-- jQuery  -->
         <script src="<?php echo $params['base_theme']; ?>pages/jquery.todo.js"></script>
 
         <!-- jQuery  -->
-        <script src="<?php echo $params['base_theme']; ?>pages/jquery.chat.js"></script>
-
-        <!--Morris Chart-->
-		<script src="<?php echo $params['base_theme']; ?>plugins/raphael/raphael-min.js"></script>
-        <script src="<?php echo $params['base_theme']; ?>plugins/morris.js/morris.min.js"></script>
-
-        <!-- jQuery  -->
         <script src="<?php echo $params['base_theme']; ?>pages/jquery.dashboard.js"></script>
-
-        <!-- Datatables-->
-        <script src="<?php echo $params['base_theme']; ?>plugins/datatables/jquery.dataTables.min.js"></script>
-        <script src="<?php echo $params['base_theme']; ?>plugins/datatables/dataTables.bootstrap.js"></script>
-        <script src="<?php echo $params['base_theme']; ?>plugins/datatables/dataTables.buttons.min.js"></script>
-        <script src="<?php echo $params['base_theme']; ?>plugins/datatables/buttons.bootstrap.min.js"></script>
-        <script src="<?php echo $params['base_theme']; ?>plugins/datatables/jszip.min.js"></script>
-        <script src="<?php echo $params['base_theme']; ?>plugins/datatables/pdfmake.min.js"></script>
-        <script src="<?php echo $params['base_theme']; ?>plugins/datatables/vfs_fonts.js"></script>
-        <script src="<?php echo $params['base_theme']; ?>plugins/datatables/buttons.html5.min.js"></script>
-        <script src="<?php echo $params['base_theme']; ?>plugins/datatables/buttons.print.min.js"></script>
-        <script src="<?php echo $params['base_theme']; ?>plugins/datatables/dataTables.fixedHeader.min.js"></script>
-        <script src="<?php echo $params['base_theme']; ?>plugins/datatables/dataTables.keyTable.min.js"></script>
-        <script src="<?php echo $params['base_theme']; ?>plugins/datatables/dataTables.responsive.min.js"></script>
-        <script src="<?php echo $params['base_theme']; ?>plugins/datatables/responsive.bootstrap.min.js"></script>
-        <script src="<?php echo $params['base_theme']; ?>plugins/datatables/dataTables.scroller.min.js"></script>
-
-        <!-- Datatable init js -->
-        <script src="<?php echo $params['base_theme']; ?>pages/datatables.init.js"></script>
 
         <script src="<?php echo $params['base_theme']; ?>js/jquery.app.js"></script>
 
