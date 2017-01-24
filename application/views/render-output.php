@@ -87,6 +87,12 @@
                             	</ul>
                             </li>
                             <li class="has_sub">
+                                <a href="#" class="waves-effect"><i class="fa fa-cloud-download"></i><span>Top Up </span><span class="pull-right"><i class="md md-add"></i></span></a>
+                                <ul class="list-unstyled">
+                            		<a href="<?php echo site_url('api/finpay0211-reserve'); ?>" class="waves-effect"><span>FinPay 0211 Reserve </span></a>
+                            	</ul>
+                            </li>
+                            <li class="has_sub">
                                 <a href="#" class="waves-effect"><i class="md md-payment"></i><span>Transaction </span><span class="pull-right"><i class="md md-add"></i></span></a>
                                 <ul class="list-unstyled">
                             		<!-- <a href="<?php echo site_url('api/topup-finpay-0211'); ?>" class="waves-effect"><span>FinPay 0211 </span></a>

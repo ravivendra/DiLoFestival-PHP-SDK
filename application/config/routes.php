@@ -53,11 +53,13 @@ $route['default_controller'] 	= 'danra';
 $route['404_override'] 			= '';
 $route['translate_uri_dashes'] 	= FALSE;
 
+$route['api/t-money'] 					= $route['default_controller'] . '/api_tmoney';
 $route['api/ipg-get-ticket'] 			= $route['default_controller'] . '/api_ipg_get_ticket';
 $route['api/ipg-get-ticket/result']		= $route['default_controller'] . '/api_ipg_get_ticket';
 $route['api/ipg-payment'] 				= $route['default_controller'] . '/api_ipg_payment';
 $route['api/ipg-payment/result']		= $route['default_controller'] . '/api_ipg_payment';
-$route['api/t-money'] 					= $route['default_controller'] . '/api_tmoney';
+$route['api/finpay0211-reserve'] 		= $route['default_controller'] . '/api_reserve_finpay0211';
+$route['api/finpay0211-reserve/result']	= $route['default_controller'] . '/api_reserve_finpay0211';
 $route['api/sign-in'] 					= $route['default_controller'] . '/api_sign_in';
 $route['api/sign-in/result']			= $route['default_controller'] . '/api_sign_in';
 $route['api/sign-up'] 					= $route['default_controller'] . '/api_sign_up';

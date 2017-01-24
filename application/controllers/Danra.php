@@ -86,6 +86,31 @@
 		}
 
 
+		public function api_reserve_finpay0211()
+		{
+			$body 						= array();
+
+			$data['params']				= @ base_barrel();
+			$data['content']			= self::CONTENT_DIR . '/v-reserve-finpay0211';
+
+			if($this->input->post('send') == 'Send')
+			{
+				$api 					= 'finpay-payment';
+
+				$body['idTmoney']		= @ sanitizer_vars($this->input->post('idTmoney'));
+				$body['idFusion']		= @ sanitizer_vars($this->input->post('idFusion'));
+				$body['token']			= @ sanitizer_vars($this->input->post('token'));
+				$body['invoice']		= @ sanitizer_vars($this->input->post('invoice'));
+				$body['amount']			= @ sanitizer_vars($this->input->post('amount'));
+				$body['terminal']		= @ sanitizer_vars($this->input->post('terminal'));
+
+				$data['response']		= $this->_call_url(FUSION_BASE_API . $api, $body);
+			}
+
+			$this->load->view('render-output', $data);
+		}
+
+
 		public function api_sign_in()
 		{
 			$body 						= array();
